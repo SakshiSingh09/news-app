@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 75px;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.heading{
+    margin: auto;
+    font-size: 6rem;
+    font-weight: 700;
+}
+.logo{
+    width: 400px;
+    height: 100px;
+}
+.navbar{
+    background: #000;
+    width: 100%;
+    padding: 16px 75px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 155px;
+    z-index: 99;
+}
+.navbar ul{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    padding-left: 0;
+}
+.navbar ul li{
+    margin-right: 20px;
+}
+.navbar .link{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar .link:hover{
+    color: #fb4c35;
+}
+.mainContent{
+    top: 10px;
+    padding: 20px 75px; 
+    margin-top: 211px; 
+}
+.mainPageRow{
+    height: 450px;
+    margin-bottom: 50px;
+}
+.mainPageColumn{
+    margin: 5px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.mainPageColumn .textContent{
+    position: absolute;
+    bottom: 0
+}
+.mainPageColumn .textContent a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.mainPageColumn .textContent p{
+    font-size: 15px;
+}
+.mainPageColumn .textContent .newsDate{
+    font-weight: 500;
+    font-size: 13px;
+}
+.bottomContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.leftContent{
+    width: 80%;
+    margin-right: 20px;
+}
+.rightContent{
+    width: 250px;
+}
+.sectionHeading{
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 4px;
+    margin-top: 20px;
+    border-left: 5px solid #fb4c35;
+}
+
+.popularContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    border: 0;
+    font-size: 13px;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 10px -10px rgb(0 0 0 / 20%);
+    padding-right: 10px;
+}
+.popularContent .card img{
+    width: 240px;
+    height: 120px;
+}
+.card a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    text-align: justify;
+    font-size: 15px;
+}
+.card .description{
+    display: none;
+}
+.card p{
+    font-weight: 500;
+    margin-top: 10px;
+}
+.card .card-right{
+    padding-left: 10px;
+}
+.newsDate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.newsDate box-icon{
+    margin-right: 4px;
+}
+.popularContent .card-left{
+    width: 240px;
+    height: 120px;
+}
+.lifeStyleContent
+.discoverContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.lifeStyleCard, .discoverCard{
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 15px 10px -10px rgb(0 0 0 / 20%);
+}
+.lifeStyleCard img{
+    width: 100%;
+    height: 200px;
+}
+.discoverCard img{
+    width: 100%;
+    height: 100px;
+}
+.discoverCard .link{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+.musicContent,
+.covidContent,
+.twitterContent{
+    display: flex;
+    flex-direction: column;
+}
+.musicContent .card,
+.covidContent .card,
+.twitterContent .card{
+    width: 100%;
+}
+.musicContent .card img,
+.covidContent .card img,
+.musicContent .card-left,
+.covidContent .card-left{
+    width: 300px;
+    height: 150px;
+}
+.musicContent .card .description,
+.covidContent .card .description{
+    display: block;
+    font-size: 14px;
+}
+.socialMedia{
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.socialMedia h6{
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.socialMedia box-icon{
+    margin-right: 8px;
+}
+.subscribeSection{
+    text-align: center;
+    padding: 10px ;
+    border: 1px solid black;
+}
+.subscribeSection input{
+    width: 100%;
+    font-size: 13px;
+    padding: 3px 5px;
+}
+.subscribeSection input:focus{
+    outline: none;
+}
+.subscribeSection button{
+    width: 100%;
+    font-size: 13px;
+    padding: 5px 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fb4c35;
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+    margin-top: 10px;
+}
+.subscribeSection button box-icon{
+    margin-right: 4px;
+}
+.weather{
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+}
+.weatherTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+.weatherTop img{
+    width: 30px;
+    height: 30px;
+}
+.weatherBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.weatherBottomSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.weatherBottomSection p,
+.weatherTop h6{
+    margin-bottom: 0;
+}
+.weatherBottomSection box-icon{
+    margin-right: 4px;
+}
+.twitterContent .card img{
+    width: 70px;
+    height: 50px;
+}
+.twitterContent .card-right a{
+    font-size: 13px;
+}
+.twitterContent .card-right p{
+    display: none;
+}
+.navbarPagesContent{
+    padding: 30px 75px;
+    margin-top: 211px; 
+}
+.navbarPagesContent .card{
+    width: 100%;
+}
+.navbarPagesContent .card img,
+.navbarPagesContent .card-left{
+    width: 300px;
+    height: 200px;    
+}
+.navbarPagesContent .card .description{
+    display: block;
+}
+.discoverSectionLayout{
+    padding: 20px 75px;
+}
+.footer{
+    padding: 20px 75px;
+    background-color: #000;
+}
+.footer-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .newsletter{
+    position: relative;
+}
+.footer .newsletter input{
+    width: 300px;
+    height: 28px;
+    font-size: 0.8rem;
+}
+::placeholder{
+    font-size: 0.7rem;
+}
+.footer .newsletter input:focus{
+    outline: none;
+}
+.footer .newsletter button{
+    background-color: #fb4c35;
+    position: absolute;
+    left: 250px;
+    border: none;
+    width: 50px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.footer .footerCol{
+    color: #fff;
+    margin-top: 20px;
+}
+.footer .footerCol ul{
+    padding-left: 0;
+    list-style: none;
+}
+.footer .footerCol li{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.footer .footerCol .link{
+    text-decoration: none;
+    color: #fff;
+} 
+.footer .footerCol .link:hover{
+    color: #fb4c35;
+}
+.copyright{
+    text-align: center;
+}
+.errorImg{
+    margin-top: 80px;
+    width: 100%;
+    height: auto
+}
