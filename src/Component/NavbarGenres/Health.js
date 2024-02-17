@@ -12,7 +12,7 @@ export default function Health(){
     }
     useEffect(()=>{
         getHealthNews();
-    },[]);
+    });
     
     if(healthNews !== undefined && healthNews.length !== 0){
         return(

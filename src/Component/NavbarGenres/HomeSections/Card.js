@@ -19,7 +19,7 @@ export default function Card(props){
                 <img src={setImage(props.headline.urlToImage)} alt="img"/>
             </div>
             <div className='card-right'>
-                <a href={props.headline.url} target='_blank'>{formatTitle(props.headline.title)}</a>
+                <a href={props.headline.url} target='_blank' rel="noopener noreferrer">{formatTitle(props.headline.title)}</a>
                 <p className='description'>{props.headline.description}</p>
                 <p className="newsDate">
                     <box-icon name='calendar' size="sm" type='solid' color="#fb4c35" ></box-icon>
