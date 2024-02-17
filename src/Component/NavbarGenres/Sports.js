@@ -16,9 +16,9 @@ export default function Sports(){
     if(sportsNews !== undefined && sportsNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {sportsNews.map(sports => {
+                {sportsNews.map((sports,index) => {
                     return(
-                        <Card headline={sports}/>
+                        <Card key={index} headline={sports}/>
                     )
                 })}
             </div>

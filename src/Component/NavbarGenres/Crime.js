@@ -17,7 +17,7 @@ export default function Crime(){
     if(crimeNews !== undefined && crimeNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {crimeNews.map(crime => {
+                {crimeNews.map((crime,index) => {
                     count++;
                     return(
                         <Card headline={crime} key={count}/>

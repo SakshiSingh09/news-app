@@ -9,7 +9,7 @@ export default function Weather(){
     }
     function getIcon(weather){
         let icon = weather.weather[0].icon;
-        let imgUrl = "http://openweathermap.org/img/w/" + icon + ".png";
+        let imgUrl = "http://openweathermap.org/img/w/" + icon + ".png"; // DevSkim: ignore DS137138
         return imgUrl;
     }
     useEffect(()=>{

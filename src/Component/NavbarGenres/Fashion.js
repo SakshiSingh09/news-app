@@ -16,9 +16,9 @@ export default function Fashion(){
     if(fashionNews !== undefined && fashionNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {fashionNews.map(fashion => {
+                {fashionNews.map((fashion,index) => {
                     return(
-                        <Card headline={fashion}/>
+                        <Card key={index} headline={fashion}/>
                     )
                 })}
             </div>

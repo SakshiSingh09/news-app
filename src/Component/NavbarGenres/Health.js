@@ -17,9 +17,9 @@ export default function Health(){
     if(healthNews !== undefined && healthNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {healthNews.map(health => {
+                {healthNews.map((health,index) => {
                     return(
-                        <Card headline={health}/>
+                        <Card key={index} headline={health}/>
                     )
                 })}
             </div>

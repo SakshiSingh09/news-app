@@ -16,9 +16,9 @@ export default function Politics(){
     if(politicsNews !== undefined && politicsNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {politicsNews.map(politics => {
+                {politicsNews.map((politics,index) => {
                     return(
-                        <Card headline={politics}/>
+                        <Card key={index} headline={politics}/>
                     )
                 })}
             </div>

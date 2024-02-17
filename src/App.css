@@ -220,7 +220,7 @@
     font-size: 13px;
     margin-bottom: 0;
 }
-.socialMedia box-icon{
+.socialMedia .icon{
     margin-right: 8px;
 }
 .subscribeSection{
@@ -309,7 +309,8 @@
 .navbarPagesContent .card img,
 .navbarPagesContent .card-left{
     width: 300px;
-    height: 200px;    
+    height: 200px;
+    object-fit: fill;    
 }
 .navbarPagesContent .card .description{
     display: block;

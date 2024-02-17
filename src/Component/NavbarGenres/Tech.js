@@ -16,9 +16,9 @@ export default function Tech(){
     if(techNews !== undefined && techNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {techNews.map(tech => {
+                {techNews.map((tech,index) => {
                     return(
-                        <Card headline={tech}/>
+                        <Card key={index} headline={tech}/>
                     )
                 })}
             </div>

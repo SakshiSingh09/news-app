@@ -1,27 +1,28 @@
 import React from 'react';
+import { FaTwitter, FaInstagram, FaYoutube, FaPinterestP, FaFacebookF } from "react-icons/fa";
 
 export default function SocialMedia(){
     return(
         <div>
             <h6 className='sectionHeading'>Stay Connected</h6>
             <div className='socialMedia' style={{backgroundColor: '#3b5998'}}>
-                <box-icon type='logo' color="white" name='facebook'></box-icon>
+                <FaFacebookF color="white" className='icon'/>
                 <h6>12,7400 Likes</h6>
             </div>
             <div className='socialMedia' style={{backgroundColor: '#c8232c'}}>
-                <box-icon name='pinterest-alt' color="white"  type='logo' ></box-icon>
+                <FaPinterestP color="white" className='icon'/>
                 <h6>5,600 Fans</h6>
             </div>
             <div className='socialMedia' style={{backgroundColor: '#5851DB'}}>
-                <box-icon type='logo' name='instagram-alt' color="white" ></box-icon>
+                <FaInstagram color="white" className='icon'/>
                 <h6>8,700 Followers</h6>
             </div>
             <div className='socialMedia' style={{backgroundColor: ' #1D9BF0'}}>
-                <box-icon name='twitter' type='logo' color="white"  ></box-icon>
+                <FaTwitter color="white" className='icon'/>
                 <h6>22,700 Followers</h6>
             </div>
             <div className='socialMedia' style={{backgroundColor: '#c4302b'}}>
-                <box-icon name='youtube' type='logo' color="white"  ></box-icon>
+                <FaYoutube color="white" className='icon' />
                 <h6>2,700 Subscribers</h6>
             </div>
         </div>
