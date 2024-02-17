@@ -16,9 +16,9 @@ export default function Game(){
     if(gameNews !== undefined && gameNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {gameNews.map(game => {
+                {gameNews.map((game,index) => {
                     return(
-                        <Card headline={game}/>
+                        <Card key={index} headline={game}/>
                     )
                 })}
             </div>

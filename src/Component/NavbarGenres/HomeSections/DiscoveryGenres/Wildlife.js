@@ -16,9 +16,9 @@ export default function Wildlife(){
     if(wildlifeNews !== undefined && wildlifeNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {wildlifeNews.map(wildlife => {
+                {wildlifeNews.map((wildlife,index) => {
                     return(
-                        <Card headline={wildlife}/>
+                        <Card key={index} headline={wildlife}/>
                     )
                 })}
             </div>

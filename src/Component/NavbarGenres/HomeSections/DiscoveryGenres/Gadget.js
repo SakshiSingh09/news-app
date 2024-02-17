@@ -16,9 +16,9 @@ export default function Gadget(){
     if(gadgetNews !== undefined && gadgetNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {gadgetNews.map(gadget => {
+                {gadgetNews.map((gadget,index) => {
                     return(
-                        <Card headline={gadget}/>
+                        <Card key={index} headline={gadget}/>
                     )
                 })}
             </div>

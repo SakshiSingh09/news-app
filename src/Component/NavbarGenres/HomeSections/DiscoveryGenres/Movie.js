@@ -16,9 +16,9 @@ export default function Movie(){
     if(movieNews !== undefined && movieNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {movieNews.map(movie => {
+                {movieNews.map((movie,index) => {
                     return(
-                        <Card headline={movie}/>
+                        <Card key={index} headline={movie}/>
                     )
                 })}
             </div>

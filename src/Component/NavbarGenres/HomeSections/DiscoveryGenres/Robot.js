@@ -16,9 +16,9 @@ export default function Robot(){
     if(robotNews !== undefined && robotNews.length !== 0){
         return(
             <div className='navbarPagesContent'>
-                {robotNews.map(robot => {
+                {robotNews.map((robot,index) => {
                     return(
-                        <Card headline={robot}/>
+                        <Card key={index} headline={robot}/>
                     )
                 })}
             </div>
