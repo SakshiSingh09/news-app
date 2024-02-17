@@ -23,7 +23,7 @@ export default function HomeMainContent(props){
                 <Row className="mainPageRow">
                         <Col className="mainPageColumn" style={{backgroundImage: setImage(headlines[2].urlToImage)}}>
                             <div className="textContent">
-                                    <a href={headlines[2].url} target="_blank">{headlines[2].title}</a>
+                                    <a href={headlines[2].url} target="_blank" rel="noopener noreferrer">{headlines[2].title}</a>
                                     <p className="newsDate">
                                         <box-icon name='calendar' size="sm" type='solid' color="#fff"></box-icon>
                                         {formatDate(headlines[2].publishedAt)}
@@ -34,7 +34,7 @@ export default function HomeMainContent(props){
                         <Row style={{height: "50%"}}>
                             <Col className="mainPageColumn" style={{backgroundImage: setImage(headlines[0].urlToImage)}}>
                                 <div className="textContent">
-                                    <a href={headlines[0].url} target="_blank">{headlines[0].title}</a>
+                                    <a href={headlines[0].url} target="_blank" rel="noopener noreferrer">{headlines[0].title}</a>
                                     <p className="newsDate">
                                         <box-icon name='calendar' size="sm" type='solid' color="#fff"></box-icon>
                                         {formatDate(headlines[0].publishedAt)}
@@ -45,7 +45,7 @@ export default function HomeMainContent(props){
                         <Row style={{height: "50%"}}>
                             <Col className="mainPageColumn" style={{backgroundImage: setImage(headlines[1].urlToImage)}}>
                                 <div className="textContent">
-                                    <a href={headlines[1].url} target="_blank">{headlines[1].title}</a>
+                                    <a href={headlines[1].url} target="_blank" rel="noopener noreferrer">{headlines[1].title}</a>
                                     <p className="newsDate">
                                         <box-icon name='calendar' size="sm" type='solid' color="#fff"></box-icon>
                                         {formatDate(headlines[1].publishedAt)}
@@ -54,7 +54,7 @@ export default function HomeMainContent(props){
                             </Col>
                             <Col className="mainPageColumn" style={{backgroundImage: setImage(headlines[3].urlToImage)}}>
                                 <div className="textContent">
-                                    <a href={headlines[3].url} taget="_blank">{formatTitle(headlines[3].title)}</a>
+                                    <a href={headlines[3].url} taget="_blank" rel="noopener noreferrer">{formatTitle(headlines[3].title)}</a>
                                     <p className="newsDate">
                                         <box-icon name='calendar' size="sm" type='solid' color="#fff"></box-icon>
                                         {formatDate(headlines[3].publishedAt)}
